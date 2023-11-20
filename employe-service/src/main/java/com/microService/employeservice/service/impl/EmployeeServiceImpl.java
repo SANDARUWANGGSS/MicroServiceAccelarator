@@ -19,7 +19,8 @@ public class EmployeeServiceImpl implements EmployeeService {
                 employeeDto.getId(),
                 employeeDto.getFirstName(),
                 employeeDto.getLastName(),
-                employeeDto.getEmail()
+                employeeDto.getEmail(),
+                employeeDto.getDepartmentCode()
         );
         Employee savedEmployee = employeeRepository.save(employee);
 
@@ -27,7 +28,8 @@ public class EmployeeServiceImpl implements EmployeeService {
                 savedEmployee.getId(),
                 savedEmployee.getFirstName(),
                 savedEmployee.getLastName(),
-                savedEmployee.getEmail()
+                savedEmployee.getEmail(),
+                savedEmployee.getDepartmentCode()
         );
         return savedEmployeeDto;
     }
@@ -39,7 +41,8 @@ public class EmployeeServiceImpl implements EmployeeService {
                 employee.getId(),
                 employee.getFirstName(),
                 employee.getLastName(),
-                employee.getEmail()
+                employee.getEmail(),
+                employee.getDepartmentCode()
         );
         return employeeDto;
     }
