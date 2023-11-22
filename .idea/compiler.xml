@@ -9,15 +9,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="department-service" />
         <module name="employe-service" />
+        <module name="Service-Registry" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="department-service" target="17" />
       <module name="employe-service" target="17" />
+      <module name="Service-Registry" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Service-Registry" options="-parameters" />
       <module name="department-service" options="-parameters" />
       <module name="employe-service" options="-parameters" />
     </option>
